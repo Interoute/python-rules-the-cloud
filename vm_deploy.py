@@ -46,18 +46,15 @@ if __name__ == '__main__':
     vm_description = raw_input('Enter the desired VM description:')
 
     # Get the zone ID- you can find these IDs using the zone_get_all.py script
-    zone_id = raw_input('Enter the zone ID (from zone_get_all.py script):')
+    zone_id = raw_input('Enter the zone ID:')
 
     # Get the template ID- you can find these IDs using the template_get_by_zone.py
     # script
-    template_id = raw_input('Enter the template ID' +
-                            ' (from the template_get_by_zone.py script):')
+    template_id = raw_input('Enter the template ID:')
 
     # Get the service offering ID- you can find these using the
     # service_offering_get_all.py script
-    service_offering_id = raw_input('Enter the service offering ID' +
-                                    ' (from the service_offering_get_all.py' +
-                                    ' script):')
+    service_offering_id = raw_input('Enter the service offering ID:')
 
     # Deploy the VM
 

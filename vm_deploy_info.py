@@ -55,9 +55,9 @@ if __name__ == '__main__':
     request = {'templatefilter': 'executable'}
     resultTemplates = api.listTemplates(request)
 
-    print("\n\n\TEMPLATES:")
+    print("\n\nTEMPLATES:")
     for template in resultTemplates['template']:
-        print('%s: %s (NAME: %s, TYPE: %s)' % (
+        print('%s: %s (TYPE: %s)' % (
             template['id'],
             template['name'],
             template['ostypename'],
