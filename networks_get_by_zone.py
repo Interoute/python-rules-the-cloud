@@ -56,10 +56,15 @@ if __name__ == '__main__':
     result = api.listNetworks(request)
  
     # (4) print out selected parts of the response data
-    for network in result['network']:
-        print('%s: %s (gateway: %s, cidr: %s)' % (
-         network['id'],
-         network['name'],
-         network['gateway'],
-         network['cidr']
-    ))
+    #     or print 'no networks'
+
+    if result != {}:
+       for network in result['network']:
+           print('%s: %s (gateway: %s, cidr: %s)' % (
+           network['id'],
+           network['name'],
+           network['gateway'],
+           network['cidr']
+           ))
+    else:
+        print("No networks found.")
