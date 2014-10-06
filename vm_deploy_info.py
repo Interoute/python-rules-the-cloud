@@ -57,10 +57,11 @@ if __name__ == '__main__':
 
     print("\n\nTEMPLATES:")
     for template in resultTemplates['template']:
-        print('%s: %s (TYPE: %s)' % (
+        print('%s: %s (TYPE: %s, ZONE: %s)' % (
             template['id'],
             template['name'],
             template['ostypename'],
+            template['zonename']
         ))
 
     # Service offerings information
